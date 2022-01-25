@@ -1,4 +1,6 @@
 @import url('https://fonts.googlepis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+@import "resets";
+@import "vars";
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -8,13 +10,6 @@
     outline: none; border: none;
     text-transform: capitalize;
 }
-
-$crimson : crimson;
-$black : #0d0d0d;
-$light-bg: #1a1a1a;
-$white: #fff;
-$light-color: #aaa;
-$box-shadow: 0.5rem 1rem rgba(0,0,0,0.7);
 
 @mixin grid ($val){
     display: grid;
@@ -31,7 +26,7 @@ html{
     }
 
     &::-webkit-scrollbar-track{
-        background-color: $black;
+        background: $black;
     }
 
     &::-webkit-scrollbar-thumb{
@@ -54,8 +49,9 @@ section{
     text-align: center;
     font-size: 6vw;
     color: $white;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem; 
     text-transform: uppercase;
+    font-weight: bolder;
 
     span{
         text-transform: uppercase;
@@ -106,21 +102,23 @@ section{
         color: $white;
         text-align: center;
         transition: .2s linear;
-    }
-
-    i{
-        color: $crimson;
-        padding-right: .5rem;
-    }
-
-    &:hover{
-        background: $crimson;
-        padding-bottom: 6rem;
 
         i{
-          color: $white;
+          color: $crimson;
+          padding-right: .5rem;
         }
+    
+        &:hover{
+            background: $crimson;
+            padding-bottom: 6rem;
+    
+            i{
+              color: $white;
+            }
+        }
+        
     }
+    
 }
 
 .home{
@@ -182,6 +180,7 @@ section{
                 color: $white;
                 text-transform: uppercase;
                 padding-bottom: 1rem;
+                font-weight: bolder;
             }
 
             .box-container{
@@ -442,8 +441,8 @@ section{
                         }
 
                         i{
-                            color: $crimson;
                             padding-right: .5rem;
+                            // color: $crimson;
                         }
                     }
                 }
@@ -482,6 +481,7 @@ section{
                 text-transform: uppercase;
                 color: $white;
                 padding-bottom: 1rem;
+                font-weight: bolder;
             }
 
             p{
@@ -508,11 +508,13 @@ section{
                     h3{
                         font-size: 2rem;
                         color: $white;
+                        font-weight: 600;
                     }
                 }
             }
 
             .share{
+
                 a{
                     font-size: 2rem;
                     height: 4.5rem;
@@ -544,7 +546,7 @@ section{
                 }
             }
 
-            .inputbox input, textarea{
+            .inputBox input,textarea{
                 border-radius: 5rem;
                 padding: 1.2rem 1.8rem;
                 font-size: 1.6rem;
