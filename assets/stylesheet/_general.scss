@@ -1,0 +1,180 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track{
+        background: $black;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: $crimson;
+        border-radius: 5rem;
+
+    }
+}
+
+body{
+    background: $black;
+    padding-bottom: 6.5rem;
+}
+
+section{
+    padding: 5rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 6vw;
+    color: $white;
+    margin-bottom: 3rem; 
+    text-transform: uppercase;
+    font-weight: bolder;
+
+    span{
+        text-transform: uppercase;
+        color: $crimson;
+    }
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: $crimson;
+    padding: .7rem;
+    font-size: 1.7rem;
+    color: $white;
+    padding-left: 2rem;
+
+    i{
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        font-size: 1.7rem;
+        text-align: center;
+        background: $white;
+        color: $crimson;
+        border-radius: 50%;
+        margin-left: 1rem;
+        transition: .2s linear;
+    } 
+     
+    &:hover i{
+        margin-left: 2rem;
+    }
+}
+
+.navbar{
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    display: flex;
+    z-index: 1000;
+    align-items: flex-end;
+
+    a{
+        padding: 2rem;
+        font-size: 2rem;
+        background: $light-bg;
+        flex: 1;
+        color: $white;
+        text-align: center;
+        transition: .2s linear;
+
+        i{
+          color: $crimson;
+          padding-right: .5rem;
+        }
+    
+        &:hover{
+            background: $crimson;
+            padding-bottom: 6rem;
+    
+            i{
+              color: $white;
+            }
+        }
+        
+    }
+    
+}
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:768px){
+     
+    .heading{
+        font-size: 12vw;
+    }
+    
+    .navbar{
+
+        a{
+            i{
+                padding: 0;
+            }
+
+            span{
+                display: none;
+            }
+
+            &:hover{
+                padding-bottom: 2rem;
+            }
+        }
+    }
+
+    .home{
+        text-align: center;
+        gap: 2rem;
+
+        .image img{
+            height: 30rem;
+            width: 30rem;
+        }
+
+        .content{
+
+            h3{
+                font-size: 3rem;
+            }
+
+            span{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .contact .row form .inputbox input{
+        width: 100% ;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+}
