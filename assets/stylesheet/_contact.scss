@@ -1,15 +1,15 @@
-.contact{
+.contact {
 
-    .row{
+    .row {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         gap: 2rem;
 
-        .info-container{
+        .info-container {
             width: 40rem;
 
-            h1{
+            h1 {
                 font-size: 3rem;
                 text-transform: uppercase;
                 color: $white;
@@ -17,28 +17,28 @@
                 font-weight: bolder;
             }
 
-            p{
+            p {
                 font-size: 1.5rem;
                 line-height: 2;
                 color: $light-color;
                 padding: 1rem 0;
             }
 
-            .box-container{
+            .box-container {
                 padding: 2rem 0;
 
-                .box{
+                .box {
                     display: flex;
                     gap: 2rem;
                     padding: 1rem 0;
 
-                    i{
+                    i {
                         font-size: 3rem;
                         color: $crimson;
                         padding-top: .5rem;
                     }
 
-                    h3{
+                    h3 {
                         font-size: 2rem;
                         color: $white;
                         font-weight: 600;
@@ -46,9 +46,9 @@
                 }
             }
 
-            .share{
+            .share {
 
-                a{
+                a {
                     font-size: 2rem;
                     height: 4.5rem;
                     width: 4.5rem;
@@ -58,28 +58,29 @@
                     color: $white;
                     text-align: center;
                     margin-right: .3rem;
-                    
-                    &:hover{
+
+                    &:hover {
                         background: $crimson;
                     }
                 }
             }
         }
 
-        form{
+        form {
             flex: 1 1 42rem;
 
-            .inputbox{
+            .inputbox {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
 
-                input{
+                input {
                     width: 49%;
                 }
             }
 
-            .inputBox input,textarea{
+            .inputBox input,
+            textarea {
                 border-radius: 5rem;
                 padding: 1.2rem 1.8rem;
                 font-size: 1.6rem;
@@ -89,18 +90,18 @@
                 background: $light-bg;
             }
 
-            textarea{
+            textarea {
                 width: 100%;
                 border-radius: 1rem;
                 resize: none;
                 height: 25rem;
             }
 
-            .btn{
+            .btn {
                 padding: 1rem 3rem;
                 cursor: pointer;
 
-                &:hover{
+                &:hover {
                     background: $white;
                     color: $black;
                 }

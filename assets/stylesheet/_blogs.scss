@@ -1,32 +1,32 @@
-@mixin grid ($val){
+@mixin grid ($val) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
     gap: 1.5rem;
 }
 
-.blogs{
+.blogs {
 
-    .box-container{
+    .box-container {
         @include grid(31rem);
 
-        .box{
+        .box {
             text-align: center;
             padding: 2rem;
             border-radius: .5rem;
             background: $light-bg;
             box-shadow: $box-shadow;
 
-            &:hover .image img{
+            &:hover .image img {
                 transform: scale(1.2);
             }
 
-            .image{
+            .image {
                 height: 25rem;
                 width: 100%;
                 border-radius: .5rem;
                 overflow: hidden;
 
-                img{
+                img {
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
@@ -35,9 +35,9 @@
 
             }
 
-            .content{
-                 
-                .icons{
+            .content {
+
+                .icons {
                     position: relative;
                     top: -1rem;
                     border-radius: .5rem;
@@ -45,34 +45,34 @@
                     display: inline-block;
                     background: $black;
 
-                    a{
+                    a {
                         font-size: 1.4rem;
                         margin: 0 1rem;
                         color: $white;
 
-                        &:hover{
+                        &:hover {
                             color: $crimson;
                         }
 
-                        i{
+                        i {
                             padding-right: .5rem;
                         }
                     }
                 }
 
-                h3{
+                h3 {
                     font-size: 2rem;
                     color: $white;
                     font-weight: normal;
                 }
 
-                p{
+                p {
                     font-size: 1.5rem;
                     color: $light-color;
                     padding: 1rem 0;
                     line-height: 2;
                 }
-                
+
             }
         }
     }

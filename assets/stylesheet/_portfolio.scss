@@ -1,37 +1,38 @@
-@mixin grid ($val){
+@mixin grid ($val) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
     gap: 1.5rem;
 }
 
-.portfolio{
+.portfolio {
     text-align: center;
 
-    .box-container{
+    .box-container {
         @include grid(31rem);
         margin-bottom: 2rem;
 
-        .box{
+        .box {
             height: 30rem;
             overflow: hidden;
             position: relative;
 
             &:hover {
-                .content{
+                .content {
                     transform: translateY(0%);
                 }
             }
 
-            img{
+            img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
 
             }
 
-            .content{
+            .content {
                 position: absolute;
-                top: 0; left: 0;
+                top: 0;
+                left: 0;
                 height: 100%;
                 width: 100%;
                 background: $light-bg;
@@ -43,25 +44,25 @@
                 transform: translateY(-100%);
                 transition: .2s linear;
 
-                h3{
+                h3 {
                     font-size: 2.5rem;
                     color: $white;
                     text-transform: uppercase;
                     font-weight: normal;
                 }
 
-                p{
+                p {
                     padding: 1rem 0;
                     font-size: 1.5rem;
                     line-height: 2;
                     color: $light-color;
                 }
 
-                a{
+                a {
                     font-size: 2rem;
                     color: $crimson;
 
-                    &:hover{
+                    &:hover {
                         color: $white;
                     }
                 }
